@@ -82,22 +82,22 @@ export default function Index() {
                     {anime.name}
                 </div>
                 <div className={s.info1cbd}>
-                    <a href={anime.url} target={'_blank'}>
+                    <a href={anime.url} target={'_blank'} rel="noreferrer">
                         <Button onClick={() => {
                         }}>Bangumi</Button>
                     </a>
                     <a href={`https://mikanani.me/Home/Search?searchstr=${anime.name_cn !== '' ? anime.name_cn : anime.name}`}
-                       target={'_blank'}>
+                       target={'_blank'} rel="noreferrer">
                         <Button onClick={() => {
                         }}>Mikan</Button>
                     </a>
                 </div>
             </div>
 
-            return <FlipCard front={front} back={back}/>
+            return <FlipCard key={anime.id} front={front} back={back}/>
         })
 
-        return <div className={s.day}>
+        return <div key={weekday.weekday?.id} className={s.day}>
             <div className={s.dayText}>{weekday?.weekday?.cn}</div>
             <div className={s.animes}>
                 {animes}
