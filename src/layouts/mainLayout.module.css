@@ -2,7 +2,7 @@
     height: calc(100vh - var(--vh-offset, 0px));
     display: flex;
     flex-flow: column;
-    background-size: cover;
+    background: #f0f0f0;
 }
 
 .mainarea{

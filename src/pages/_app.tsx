@@ -4,6 +4,7 @@ import type {AppProps} from 'next/app'
 import MainLayout from "@/layouts/MainLayout";
 import {useEffect} from "react";
 import vhCheck from "vh-check";
+import './flipcard.css'
 
 export default function App({Component, pageProps}: AppProps) {
   useEffect(()=>{
@@ -12,6 +13,4 @@ export default function App({Component, pageProps}: AppProps) {
   return <MainLayout>
     <Component {...pageProps} />
   </MainLayout>
-
-
 }

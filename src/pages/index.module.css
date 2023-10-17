@@ -28,6 +28,66 @@
 }
 
 .img{
-    height: 40px;
-    object-fit: contain;
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+}
+
+.day{
+    display: flex;
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+}
+
+.dayText{
+    flex-shrink: 0;
+    width: 100px;
+}
+
+.animes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.anime{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.info1{
+    width: 20%;
+}
+
+.info1c{
+    font-size: 12px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    height: 33.33%;
+    padding: 0 0 0 5px;
+    overflow: hidden;
+}
+
+.info2{
+    width: 50%;
+}
+
+.info2cu{
+    font-size: 20px;
+    padding: 0 0 0 5px;
+    background: #FAD689;
+    color: #0F0F0F;
+    height: 66.66%;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    text-wrap: none;
+    white-space: nowrap;
+}
+.info2cd{
+    font-size: 12px;
+    padding: 0 0 0 5px;
+    background: rgba(250, 214, 137, 0.3);
+    color: #0F0F0F;
+    height: 33.33%;
+    overflow: hidden;
 }
