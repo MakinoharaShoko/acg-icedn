@@ -23,4 +23,12 @@ body {
 
 * {
     transition: all 0.33s;
+    box-sizing: border-box;
 }
+
+/* 清除 a 标签默认的样式 */
+a {
+    text-decoration: none;  /* 移除下划线 */
+    color: inherit;         /* 使用父元素的字体颜色 */
+}
+

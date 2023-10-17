@@ -3,6 +3,7 @@ import FlipCard from "@/components/FlipCard";
 import useSWR from "swr";
 import {api} from "@/api";
 import s from './index.module.css'
+import Button from "@/components/Button";
 
 export default function Index() {
 
@@ -75,7 +76,25 @@ export default function Index() {
                 </div>
             </div>
 
-            return <FlipCard front={front} back={anime.name_cn}/>
+            const back = <div className={s.anime}
+                              style={{backgroundColor: colorUp ?? '#FAD689', flexDirection: 'column'}}>
+                <div className={s.info1cb}>
+                    {anime.name}
+                </div>
+                <div className={s.info1cbd}>
+                    <a href={anime.url} target={'_blank'}>
+                        <Button onClick={() => {
+                        }}>Bangumi</Button>
+                    </a>
+                    <a href={`https://mikanani.me/Home/Search?searchstr=${anime.name_cn !== '' ? anime.name_cn : anime.name}`}
+                       target={'_blank'}>
+                        <Button onClick={() => {
+                        }}>Mikan</Button>
+                    </a>
+                </div>
+            </div>
+
+            return <FlipCard front={front} back={back}/>
         })
 
         return <div className={s.day}>

@@ -1,4 +1,4 @@
-.item{
+.item {
     user-select: none;
     /*height: 100px;*/
     /*max-height: 150px;*/
@@ -13,65 +13,66 @@
     border-radius: 5px;
 }
 
-.item:hover{
-    background: rgba(255,255,255,0.15);
+.item:hover {
+    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(3px);
 }
 
-.itemTitle{
+.itemTitle {
     flex: 1;
     overflow: hidden;
     padding: 0 10px 0 10px;
     font-size: 14px;
-    text-overflow:ellipsis;
-    text-shadow: 2px 2px 5px rgba(0,0,0,1);
+    text-overflow: ellipsis;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 }
 
-.img{
+.img {
     height: 100%;
     width: 30%;
     object-fit: cover;
 }
 
-.day{
-    display: flex;
-    border-bottom: 2px solid rgba(0,0,0,0.5);
+.day {
+    /*display: flex;*/
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 0 0 5px 5px;
 }
 
-.dayText{
+.dayText {
     flex-shrink: 0;
     width: 100px;
 }
 
-.animes{
+.animes {
     display: flex;
     flex-wrap: wrap;
 }
 
-.anime{
+.anime {
     height: 100%;
     width: 100%;
     display: flex;
 }
 
-.info1{
+.info1 {
     width: 20%;
 }
 
-.info1c{
+.info1c {
     font-size: 12px;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     color: white;
     height: 33.33%;
     padding: 0 0 0 5px;
     overflow: hidden;
 }
 
-.info2{
+.info2 {
     width: 50%;
 }
 
-.info2cu{
+.info2cu {
     font-size: 20px;
     padding: 0 0 0 5px;
     background: #FAD689;
@@ -83,11 +84,32 @@
     text-wrap: none;
     white-space: nowrap;
 }
-.info2cd{
+
+.info2cd {
     font-size: 12px;
     padding: 0 0 0 5px;
     background: rgba(250, 214, 137, 0.3);
     color: #0F0F0F;
     height: 33.33%;
     overflow: hidden;
+}
+
+.info1cb {
+    font-size: 12px;
+    background: #2F2F2F;
+    color: white;
+    height: 33.33%;
+    width: 100%;
+    padding: 0 0 0 5px;
+    overflow: hidden;
+}
+
+.info1cbd {
+    height: 66.66%;
+    width: 100%;
+    padding: 0 0 0 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
