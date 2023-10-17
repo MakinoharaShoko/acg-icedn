@@ -56,7 +56,9 @@ export default function Index() {
 
     const days = data?.map(weekday => {
 
-        const animes = weekday?.items?.map(anime => {
+        const animes = weekday?.items?.filter(e => {
+            return (e?.rating?.total ?? 0) > 30
+        }).map(anime => {
 
             const colorUp = (anime?.rating?.score ?? 0) >= RECOMMEND_LINE ? '#24936E' : undefined
             const colorDn = (anime?.rating?.score ?? 0) >= RECOMMEND_LINE ? 'rgba(36,147,110,0.2)' : undefined
