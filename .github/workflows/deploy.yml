@@ -8,6 +8,9 @@ on:
       - master
       - main
 
+permissions:
+  contents: write
+
 # 任务
 jobs:
   build-and-deploy:
